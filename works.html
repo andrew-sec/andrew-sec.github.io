@@ -18,49 +18,46 @@
     <div class="wrapper">
       <div class="maincontent">
         <header class="header">
-          <div class="header__socials socials">
+          <div class="header__top-line">
             <ul class="socials__list">
-              <li class="socials__item socials__item_header"><a class="socials__link socials__link_vk" href="#">
+              <li class="socials__item socials__item_header"><a class="socials__link_header" href="#">
                           <svg class="socials__icon socials__icon_header">
                             <use xlink:href="assets/img/sprite/sprite.svg#vk"></use>
                           </svg></a></li>
-              <li class="socials__item socials__item_header"><a class="socials__link socials__link_git" href="#">
+              <li class="socials__item socials__item_header"><a class="socials__link_header" href="#">
                           <svg class="socials__icon socials__icon_header">
                             <use xlink:href="assets/img/sprite/sprite.svg#github"></use>
                           </svg></a></li>
-              <li class="socials__item socials__item_header"><a class="socials__link socials__link_in" href="#">
+              <li class="socials__item socials__item_header"><a class="socials__link_header" href="#">
                           <svg class="socials__icon socials__icon_header">
                             <use xlink:href="assets/img/sprite/sprite.svg#in"></use>
                           </svg></a></li>
             </ul>
+                    <svg class="hamburger-menu__icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#hamburger"></use>
+                    </svg>
           </div>
-          <div class="header__hamburger-menu hamburger-menu"><img class="hamburger-menu__icon" src="assets/img/icons/hamburger.svg" alt="hamburger icon"></div>
           <div class="header__title_transparent"><img src="assets/img/portfolio_header_bg.png" alt="portfolio header"></div>
-          <div class="header__login-box login-box">
-            <div class="login-box__pic"><img class="login-box__pic-elem" src="assets/img/user.jpg" alt="user-photo"></div>
-            <div class="login-box__name login-box__name_header">Андрей Секачев</div>
-            <div class="login-box__descr login-box__descr_header">Личный сайт веб разработчика </div>
-          </div>
-          <div class="header__arrow-scroll arrow-scroll"><a class="arrow-scroll__arrow arrow-scroll__link_header" href="#">
-                      <svg class="arrow-scroll__arrow_header">
-                        <use xlink:href="assets/img/sprite/sprite.svg#arrow_down"></use>
-                      </svg></a></div>
-          <svg class="triangles" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveAspectRatio="none">
-            <polygon class="triangles__left triangles__left_white" points="0,0 0,100 500,100 500,90"></polygon>
-            <polygon class="triangles__right triangles__right_white" points="1000,0   1000,100   500,100   500,90"></polygon>
+          <div class="login-box login-box__bg_transparent">
+            <div class="login-box__pic"><img class="login-box__pic-elem" src="assets/img/user.jpg" alt="user-photo"></div><span class="login-box__title_35px">Андрей Секачев</span><span class="login-box__subtitle_header">Личный сайт веб разработчика</span>
+          </div><a class="arrow-scroll__down" href="#">
+                    <svg class="arrow-scroll__arrow_header">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow_down"></use>
+                    </svg></a>
+          <svg class="triangles triangles_pos_absolute" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon class="triangles_fill_white" points="0,0 0,100 500,100 500,90"></polygon>
+            <polygon class="triangles_fill_white" points="1000,0   1000,100   500,100   500,90"></polygon>
           </svg>
         </header>
         <section class="section section__works">
-          <div class="title works__title">Мои работы</div>
-          <div class="slider works__slider">
-            <div class="works__slider_left">
-              <div class="works__block">
-                <div class="title works__title_h3 subtitle">Сайт школы онлайн<br> образования</div>
-                <div class="works__text">html, css, javascript</div><a class="works__link_button" href="#">Посмотреть сайт</a>
-              </div>
+          <div class="title title_font_63px title_align_center"><span class="title__text title__text_line-height_184px">Мои работы</span></div>
+          <div class="works__slider">
+            <div class="works__slider_width_50">
+              <div class="title subtitle_font_35px title_align_center"><span class="title__text title__text_margin-b_30px">Сайт школы онлайн<br> образования</span></div>
+              <div class="cources"> <span class="cources__text">html, css, javascript</span></div><a class="button__link" href="#"> <span class="button__text">Посмотреть сайт</span></a>
             </div>
-            <div class="works__slider_right">
-              <div class="slider__image_big"><img class="slider_pic" src="assets/img/slider/work-1.png" alt="work-1"></div>
+            <div class="works__slider_width_50 works__slider_bgcolor_beige">
+              <div class="slider__image_size_big"><img class="slider_pic" src="assets/img/slider/work-1.png" alt="work-1"></div>
               <div class="sliders__image_small">
                 <div class="slider__image_small_left"><img class="slider_pic slider_pic_small" src="assets/img/slider/work-2.png" alt="work-2">
                   <div class="header__arrow-scroll arrow-scroll"><a class="arrow-scroll__arrow arrow-scroll__link_works" href="#">
@@ -78,89 +75,75 @@
             </div>
           </div>
         </section>
-        <div class="title works__title feedback__title">Что обо мне<br> говорят </div>
-        <section class="section section__full-screen section__feedback">     
+        <div class="title title_font_63px title_align_center title__mb_15px"><span class="title__text">Что обо мне<br> говорят </span></div>
+        <section class="section section__feedback">     
           <ul class="feedback__list">
             <li class="feedback__item">
+              <div class="quotes quotes_align_left"><img class="quotes__icon" src="assets/img/icons/quotes.svg" alt="quotes icon"></div>
               <div class="feedback__text">
                 <p>Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
               </div>
-              <div class="reviever reviewer__feedback">
-                <div class="feedback__pic"><img class="feedback__pic_left" src="assets/img/koval.jpg" alt="photo"></div>
-                <div class="feedback__reviewer">
-                  <div class="feedback__name">Ковальчук Дмитрий</div>
-                  <div class="feedback__pos">основатель Loftschool</div>
-                </div>
+              <div class="reviewer">
+                <div class="reviewer__pic"><img class="reviever__pic_elem" src="assets/img/koval.jpg" alt="photo"></div>
+                <div class="reviewer__info"><span class="reviewer__text reviewer__text_font_bold reviewer__text_color_accent">Ковальчук Дмитрий</span><span class="reviewer__text reviewer__text_color_accent">основатель Loftschool</span></div>
               </div>
             </li>
             <li class="feedback__item">
+              <div class="quotes quotes_align_left"><img class="quotes__icon" src="assets/img/icons/quotes.svg" alt="quotes icon"></div>
               <div class="feedback__text">
                 <p>Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
               </div>
-              <div class="reviever reviewer__feedback">
-                <div class="feedback__pic"><img class="feedback__pic_right" src="assets/img/sabantsev.jpg" alt="photo"></div>
-                <div class="feedback__reviewer">
-                  <div class="feedback__name">Сабанцев Владимир</div>
-                  <div class="feedback__pos">преподаватель</div>
-                </div>
+              <div class="reviewer">
+                <div class="reviewer__pic"><img class="reviever__pic_elem" src="assets/img/sabantsev.jpg" alt="photo"></div>
+                <div class="reviewer__info"><span class="reviewer__text reviewer__text_font_bold reviewer__text_color_accent">Сабанцев Владимир</span><span class="reviewer__text reviewer__text_color_accent">преподаватель</span></div>
               </div>
             </li>
           </ul>
-          <div class="form__block">
-            <div class="title subtitle">
-              <div class="form__title">Связаться со мной</div>
-            </div>
-            <form class="form__feedback">
+          <div class="feedback__form">
+            <div class="title subtitle_font_35px"><span class="title__text">Связаться со мной</span></div>
+            <form class="form">
               <div class="inputs__block">
-                <input class="input input__name" type="text" placeholder="Имя">
-                <input class="input input__email" type="email" placeholder="E-mail">
-                <textarea class="input textarea__message" placeholder="Ваше сообщение"></textarea>
+                <input class="input__item" type="text" placeholder="Имя">
+                <input class="input__item" type="email" placeholder="E-mail">
+                <textarea class="input__item input__item_min-height_140px" placeholder="Ваше сообщение"></textarea>
               </div>
               <div class="form__buttons">
-                <input class="input__send form__button-item" type="submit" value="Отправить">
-                <input class="input__reset form__button-item" type="reset" value="Очистить">
+                <input class="button__item" type="submit" value="Отправить">
+                <input class="button__item" type="reset" value="Очистить">
               </div>
-            </form><a class="arrow-scroll__arrow arrow-scroll__up" href="#">
-                      <svg class="arrow__up">
-                        <use xlink:href="assets/img/sprite/sprite.svg#portf_arrow_up"></use>
-                      </svg></a>
-          </div>
+            </form>
+          </div><a class="arrow-scroll__arrow arrow-scroll__up" href="#">
+                    <svg class="arrow__up">
+                      <use xlink:href="assets/img/sprite/sprite.svg#portf_arrow_up"></use>
+                    </svg></a>
           <footer class="footer footer_position_absolute">
-            <div class="footer_row_top">
-              <nav class="navigation navigation_location_footer">
-                <ul class="navigation_location_footer__list">
-                  <li class="navigation_location_footer__item"><a class="navigation_location_footer__link" href="works.html">Мои работы</a></li>
-                  <li class="navigation_location_footer__item"><a class="navigation_location_footer__link" href="about.html">Обо мне</a></li>
-                  <li class="navigation_location_footer__item"><a class="navigation_location_footer__link" href="blog.html">Блог</a></li>
-                  <li class="navigation_location_footer__item"><a class="navigation_location_footer__link" href="#">Авторизация</a></li>
+            <div class="footer__row">
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item"><a class="footer__link" href="works.html">Мои работы</a></li>
+                  <li class="footer__item"><a class="footer__link" href="about.html">Обо мне</a></li>
+                  <li class="footer__item"><a class="footer__link" href="blog.html">Блог</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Авторизация</a></li>
                 </ul>
               </nav>
-              <div class="footer__socials socials">
-                <ul class="socials__list socials__list_footer">
-                  <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer socials__link_vk" href="#">
+              <div class="footer__socials social-view-circle">
+                <ul class="socials__list socials__list_margin_0">
+                  <li class="socials__item"><a class="socials__link socials__link_footer socials__link_vk" href="#">
                               <svg class="socials__icon socials__icon_footer">
                                 <use xlink:href="assets/img/sprite/sprite.svg#vk_round"></use>
                               </svg></a></li>
-                  <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer socials__link_git" href="#">
+                  <li class="socials__item"><a class="socials__link socials__link_footer socials__link_git" href="#">
                               <svg class="socials__icon socials__icon_footer">
                                 <use xlink:href="assets/img/sprite/sprite.svg#github_round"></use>
                               </svg></a></li>
-                  <li class="socials__item socials__item_footer"><a class="socials__link socials__link_footer socials__link_in" href="#">
+                  <li class="socials__item"><a class="socials__link socials__link_footer socials__link_in" href="#">
                               <svg class="socials__icon socials__icon_footer">
                                 <use xlink:href="assets/img/sprite/sprite.svg#in_round"></use>
                               </svg></a></li>
                 </ul>
               </div>
             </div>
-            <div class="footer_row_bottom">
-              <div class="footer__text footer__text_left">
-                <div class="footer__text_about">Я веб-разработчик из Киева, и этот сайт я сделал в рамках<br> обучения в Школе онлайн образования LoftSchool. </div>
-              </div>
-              <div class="footer__text footer__text_right">
-                <div class="copyright">
-                   © Андрей Секачев | создано с любовью в LoftSchool</div>
-              </div>
-            </div>
+            <div class="footer__row"><span class="footer__text">Я веб-разработчик из Киева, и этот сайт я сделал в рамках<br> обучения в Школе онлайн образования LoftSchool. </span><span class="footer__text footer__text_copyright">© Андрей Секачев | создано с любовью в LoftSchool</span></div>
           </footer>
         </section>
       </div>

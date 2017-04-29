@@ -19,17 +19,17 @@
       <div class="maincontent">
         <header class="header">
           <div class="header__top-line">
-            <ul class="socials__list">
-              <li class="socials__item socials__item_header"><a class="socials__link_header" href="#">
-                          <svg class="socials__icon socials__icon_header">
+            <ul class="socials text_color_rgba-white">
+              <li class="socials__item"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
                             <use xlink:href="assets/img/sprite/sprite.svg#vk"></use>
                           </svg></a></li>
-              <li class="socials__item socials__item_header"><a class="socials__link_header" href="#">
-                          <svg class="socials__icon socials__icon_header">
+              <li class="socials__item"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
                             <use xlink:href="assets/img/sprite/sprite.svg#github"></use>
                           </svg></a></li>
-              <li class="socials__item socials__item_header"><a class="socials__link_header" href="#">
-                          <svg class="socials__icon socials__icon_header">
+              <li class="socials__item"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
                             <use xlink:href="assets/img/sprite/sprite.svg#in"></use>
                           </svg></a></li>
             </ul>
@@ -49,33 +49,32 @@
             <polygon class="triangles_fill_beige" points="1000,0   1000,100   500,100   500,90"></polygon>
           </svg>
         </header>
-        <section class="section section__about">
-          <div class="about about_column_left">
-            <div class="about__title_transparent"><img class="about__pic-transparent" src="assets/img/about_header_bg.png" alt="about-bg"></div>
-            <div class="about__title_width_50">
-              <div class="title title_font_63px title_align_center"><span class="title__text">Обо мне</span></div>
+        <section class="section section_about">
+          <div class="about-descr block_width_50">
+            <div class="about-descr__title flex_width_50">
+              <div class="title text_font_63 text_align_center flex_width_50"><span class="title__text">Обо мне</span></div>
             </div>
-            <div class="about__user">
-              <div class="about__user-image"><img class="about__user_pic" src="assets/img/user-pic.jpg" alt="user-pic"></div>
-              <div class="title subtitle_font_35px title_align_center"><span class="title__text">Кто я</span></div>
-              <div class="about-user__text">
+            <div class="user">
+              <div class="user__image flex_width_50"><img class="about__user_pic" src="assets/img/user-pic.jpg" alt="user-pic"></div>
+              <div class="title text_font_35 text_align_center"><span class="title__text">Кто я</span></div>
+              <div class="user__text">
                 <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
                 <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
               </div>
             </div>
           </div>
-          <div class="about about_column_right">
-            <div class="title subtitle_font_35px title_align_center"><span class="title__text">Чем я могу быть<br> вам полезен</span></div>
-            <div class="about-user-info__text">
+          <div class="about__skills block_width_50">
+            <div class="title text_font_35 text_align_center"><span class="title__text">Чем я могу быть<br> вам полезен</span></div>
+            <div class="about__text">
               <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
             </div>
-            <div class="about-info__content">
+            <div class="about__content">
               <ul class="skills">
                 <li class="skills__item">
                   <div class="skill-section">
                     <div class="skill-section__title">Frontend
-                      <ul class="skill-section__list">
-                        <li class="skills-section__item">
+                      <ul class="circles">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -83,7 +82,7 @@
                             </svg><span class="skill__name">HTML5</span>
                           </div>
                         </li>
-                        <li class="skills-section__item">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -91,7 +90,7 @@
                             </svg><span class="skill__name">CSS3</span>
                           </div>
                         </li>
-                        <li class="skills-section__item">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -108,8 +107,8 @@
                 <li class="skills__item">
                   <div class="skill-section">
                     <div class="skill-section__title">Backend
-                      <ul class="skill-section__list">
-                        <li class="skills-section__item">
+                      <ul class="circles">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -117,7 +116,7 @@
                             </svg><span class="skill__name">PHP</span>
                           </div>
                         </li>
-                        <li class="skills-section__item">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -125,7 +124,7 @@
                             </svg><span class="skill__name">MySQL</span>
                           </div>
                         </li>
-                        <li class="skills-section__item">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -133,7 +132,7 @@
                             </svg><span class="skill__name">Node.js<br>&npm</span>
                           </div>
                         </li>
-                        <li class="skills-section__item">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -150,8 +149,8 @@
                 <li class="skills__item">
                   <div class="skill-section">
                     <div class="skill-section__title">Workflow
-                      <ul class="skill-section__list">
-                        <li class="skills-section__item">
+                      <ul class="circles">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -159,7 +158,7 @@
                             </svg><span class="skill__name">Git</span>
                           </div>
                         </li>
-                        <li class="skills-section__item">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -167,7 +166,7 @@
                             </svg><span class="skill__name">Gulp</span>
                           </div>
                         </li>
-                        <li class="skills-section__item">
+                        <li class="circles__item">
                           <div class="skill">
                             <svg class="skill__circle" viewbox="0 0 110 110">
                               <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
@@ -183,10 +182,10 @@
             </div>
           </div>
         </section>
-        <section class="section section__full-screen section__map" style="background-image:url(assets/img/map.jpg);">
+        <section class="section section_height_100vh section__map" style="background-image:url(assets/img/map.jpg);">
           <div class="map__contacts login-box">
-            <div class="title subtitle_font_35px"> <span class="title__text">Контакты</span></div>
-            <ul class="contacts__list">
+            <div class="title text_font_35"><span class="title__text">Контакты</span></div>
+            <ul class="contacts">
               <li class="contacts__item">
                         <svg class="contacts__icon">
                           <use xlink:href="assets/img/sprite/sprite.svg#skype_n"></use>
@@ -220,7 +219,7 @@
                 </ul>
               </nav>
               <div class="footer__socials social-view-circle">
-                <ul class="socials__list socials__list_margin_0">
+                <ul class="socials">
                   <li class="socials__item"><a class="socials__link socials__link_footer socials__link_vk" href="#">
                               <svg class="socials__icon socials__icon_footer">
                                 <use xlink:href="assets/img/sprite/sprite.svg#vk_round"></use>

@@ -37,7 +37,7 @@
                       <use xlink:href="assets/img/sprite/sprite.svg#hamburger"></use>
                     </svg>
           </div>
-          <div class="header__title_transparent"><img src="assets/img/portfolio_header_bg.png" alt="portfolio header"></div>
+          <div class="header__title_transparent"><img class="title_image_transparent" src="assets/img/portfolio_header_bg.png" alt="portfolio header"></div>
           <div class="login-box login-box__bg_transparent">
             <div class="login-box__pic"><img class="login-box__pic-elem" src="assets/img/user.jpg" alt="user-photo"></div><span class="login-box__title_35px">Андрей Секачев</span><span class="login-box__subtitle_header">Личный сайт веб разработчика</span>
           </div><a class="arrow-scroll_header_down" href="#">
@@ -50,12 +50,12 @@
           </svg>
         </header>
         <section class="section section_about">
-          <div class="about-descr block_width_50">
-            <div class="about-descr__title flex_width_50">
+          <div class="about-descr">
+            <div class="about-descr__title">
               <div class="title text_font_63 text_align_center flex_width_50"><span class="title__text">Обо мне</span></div>
             </div>
             <div class="user">
-              <div class="user__image flex_width_50"><img class="about__user_pic" src="assets/img/user-pic.jpg" alt="user-pic"></div>
+              <div class="user__image"><img class="about__user_pic" src="assets/img/user-pic.jpg" alt="user-pic"></div>
               <div class="title text_font_35 text_align_center"><span class="title__text">Кто я</span></div>
               <div class="user__text">
                 <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
@@ -63,152 +63,155 @@
               </div>
             </div>
           </div>
-          <div class="about__skills block_width_50">
-            <div class="title text_font_35 text_align_center"><span class="title__text">Чем я могу быть<br> вам полезен</span></div>
-            <div class="about__text">
-              <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+          <div class="skills">
+            <div class="skills__descr">
+              <div class="title text_font_35 text_align_center"><span class="title__text">Чем я могу быть<br> вам полезен</span></div>
+              <div class="about__text">
+                <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+              </div>
             </div>
-            <div class="about__content">
-              <ul class="skills">
-                <li class="skills__item">
-                  <div class="skill-section">
-                    <div class="skill-section__title">Frontend
-                      <ul class="circles">
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">HTML5</span>
-                          </div>
-                        </li>
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">CSS3</span>
-                          </div>
-                        </li>
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">jQuery</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+            <div class="skills__content"></div>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skill-section">
+                  <div class="skill-section__title">Frontend
+                    <ul class="circles">
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">HTML5</span>
+                        </div>
+                      </li>
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">CSS3</span>
+                        </div>
+                      </li>
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">jQuery</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-              <ul class="skills">
-                <li class="skills__item">
-                  <div class="skill-section">
-                    <div class="skill-section__title">Backend
-                      <ul class="circles">
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">PHP</span>
-                          </div>
-                        </li>
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">MySQL</span>
-                          </div>
-                        </li>
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">Node.js<br>&npm</span>
-                          </div>
-                        </li>
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">Mongo.db</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skill-section">
+                  <div class="skill-section__title">Backend
+                    <ul class="circles">
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">PHP</span>
+                        </div>
+                      </li>
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">MySQL</span>
+                        </div>
+                      </li>
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">Node.js<br>&npm</span>
+                        </div>
+                      </li>
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">Mongo.db</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-              <ul class="skills">
-                <li class="skills__item">
-                  <div class="skill-section">
-                    <div class="skill-section__title">Workflow
-                      <ul class="circles">
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">Git</span>
-                          </div>
-                        </li>
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">Gulp</span>
-                          </div>
-                        </li>
-                        <li class="circles__item">
-                          <div class="skill">
-                            <svg class="skill__circle" viewbox="0 0 110 110">
-                              <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                              <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                            </svg><span class="skill__name">Bower</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skill-section">
+                  <div class="skill-section__title">Workflow
+                    <ul class="circles">
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-90" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">Git</span>
+                        </div>
+                      </li>
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">Gulp</span>
+                        </div>
+                      </li>
+                      <li class="circles__item">
+                        <div class="skill">
+                          <svg class="skill__circle" viewbox="0 0 110 110">
+                            <circle class="skill__circle_first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="skill__circle_second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skill__name">Bower</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="section section_height_100vh section__map" style="background-image:url(assets/img/map.jpg);">
-          <div class="map__contacts login-box">
-            <div class="title text_font_35"><span class="title__text">Контакты</span></div>
-            <ul class="contacts">
-              <li class="contacts__item">
-                        <svg class="contacts__icon">
-                          <use xlink:href="assets/img/sprite/sprite.svg#skype_n"></use>
-                        </svg><span class="contacts__text">skype_kdn</span>
-              </li>
-              <li class="contacts__item">
-                        <svg class="contacts__icon">
-                          <use xlink:href="assets/img/sprite/sprite.svg#envelope"></use>
-                        </svg><span class="contacts__text">astahov@gmail.com</span>
-              </li>
-              <li class="contacts__item">
-                        <svg class="contacts__icon">
-                          <use xlink:href="assets/img/sprite/sprite.svg#phone"></use>
-                        </svg><span class="contacts__text">+7 931 200 93 24</span>
-              </li>
-              <li class="contacts__item">
-                        <svg class="contacts__icon">
-                          <use xlink:href="assets/img/sprite/sprite.svg#map_marker"></use>
-                        </svg><span class="contacts__text">г.Новосибирск, ул. Инская, д. 5</span>
+                </div>
               </li>
             </ul>
           </div>
-          <footer class="footer footer_position_absolute">
+        </section>
+        <section class="section section_height_100vh section__map">
+          <div class="contacts_wrap">
+            <div class="contacts login-box">
+              <div class="title text_font_35"><span class="title__text">Контакты</span></div>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                          <svg class="contacts__icon">
+                            <use xlink:href="assets/img/sprite/sprite.svg#skype_n"></use>
+                          </svg><span class="contacts__text">skype_kdn</span>
+                </li>
+                <li class="contacts__item">
+                          <svg class="contacts__icon">
+                            <use xlink:href="assets/img/sprite/sprite.svg#envelope"></use>
+                          </svg><span class="contacts__text">astahov@gmail.com</span>
+                </li>
+                <li class="contacts__item">
+                          <svg class="contacts__icon">
+                            <use xlink:href="assets/img/sprite/sprite.svg#phone"></use>
+                          </svg><span class="contacts__text">+7 931 200 93 24</span>
+                </li>
+                <li class="contacts__item">
+                          <svg class="contacts__icon">
+                            <use xlink:href="assets/img/sprite/sprite.svg#map_marker"></use>
+                          </svg><span class="contacts__text">г.Новосибирск, ул. Инская, д. 5</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <footer class="footer footer_flex">
             <div class="footer__row">
               <nav class="footer__nav">
                 <ul class="footer__list">

@@ -7,7 +7,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="/assets/css/foundation.css">
     <link rel="stylesheet" href="/assets/css/app.css">
     <script src="/assets/js/foundation.js" defer></script>
@@ -18,6 +18,7 @@
     <div class="wrapper">
       <div class="maincontent">
         <header class="header">
+          <div class="header__bg"></div>
           <div class="header__top-line">
             <ul class="socials text_color_rgba-white">
               <li class="socials__item social__item_header"><a class="socials__link socials__link_header" href="#">
@@ -33,9 +34,7 @@
                             <use xlink:href="assets/img/sprite/sprite.svg#in"></use>
                           </svg></a></li>
             </ul>
-                    <svg class="hamburger-menu__icon">
-                      <use xlink:href="assets/img/sprite/sprite.svg#hamburger"></use>
-                    </svg>
+            <div class="hamburger"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></div>
           </div>
           <div class="header__title_transparent"><img class="title_image_transparent" src="assets/img/portfolio_header_bg.png" alt="portfolio header"></div>
           <div class="login-box login-box__bg_transparent">
@@ -45,10 +44,22 @@
                       <use xlink:href="assets/img/sprite/sprite.svg#arrow_down"></use>
                     </svg></a>
           <svg class="triangles triangles_pos_absolute" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 100" preserveAspectRatio="none">
-            <polygon class="triangles_fill_grey" points="0,0 0,100 500,100 500,90"></polygon>
-            <polygon class="triangles_fill_beige" points="1000,0   1000,100   500,100   500,90"></polygon>
+            <polygon class="triangles_fill_grey" points="0,0 0,100 500,100 500,98"></polygon>
+            <polygon class="triangles_fill_beige" points="1000,0   1000,100   500,100   500,98"></polygon>
           </svg>
         </header>
+        <div class="fullscreen-menu">
+          <div class="fullscreen-menu__bg fullscreen-menu__bg_left"></div>
+          <div class="fullscreen-menu__bg fullscreen-menu__bg_right"></div>
+          <nav class="fullscreen-menu__nav">
+            <ul class="hide-menu__list">
+              <li class="hide-menu__item"><a class="hide-menu__link title text_font_63" href="/works.html"><span class="title__text text_color_white">Мои работы</span></a></li>
+              <li class="hide-menu__item"><a class="hide-menu__link title text_font_63" href="/about.html"><span class="title__text text_color_white">Обо мне</span></a></li>
+              <li class="hide-menu__item"><a class="hide-menu__link title text_font_63" href="/blog.html"><span class="title__text text_color_white">Блог</span></a></li>
+              <li class="hide-menu__item"><a class="hide-menu__link title text_font_63" href="/index.html"><span class="title__text text_color_white">Авторизация</span></a></li>
+            </ul>
+          </nav>
+        </div>
         <section class="section section_about">
           <div class="about-descr">
             <div class="about-descr__title">

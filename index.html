@@ -7,7 +7,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="/assets/css/foundation.css">
     <link rel="stylesheet" href="/assets/css/app.css">
     <script src="/assets/js/foundation.js" defer></script>
@@ -17,31 +17,80 @@
   <body>
     <div class="wrapper">
       <div class="maincontent">
+        <div class="preloader">
+          <div class="preloader__spinner">
+            <div class="preloader__animation"></div>
+            <div class="preloader__percents">0%</div>
+          </div>
+        </div>
+        <div class="parallax" id="parallax">
+          <div class="parallax__layer"><img class="parallax__image" src="assets/img/parallax/2.png" alt="parallax layer"></div>
+          <div class="parallax__layer"><img class="parallax__image" src="assets/img/parallax/3.png" alt="parallax layer"></div>
+          <div class="parallax__layer"><img class="parallax__image" src="assets/img/parallax/4.png" alt="parallax layer"></div>
+          <div class="parallax__layer"><img class="parallax__image" src="assets/img/parallax/5.png" alt="parallax layer"></div>
+          <div class="parallax__layer"><img class="parallax__image" src="assets/img/parallax/6.png" alt="parallax layer"></div>
+          <div class="parallax__layer"><img class="parallax__image" src="assets/img/parallax/7.png" alt="parallax layer"></div>
+        </div>
         <section class="welcome section_height_100vh">
-          <button class="button button_pos_absolute"><span class="text_color_accent text_color_white">Авторизоваться</span></button>
-          <div class="login-box login-box__welcome">
-            <div class="login-box__pic"><img class="login-box__pic-elem" src="assets/img/user.jpg" alt="user-photo"></div><span class="login-box__title text_size_28">Андрей Секачев</span><span class="login-box__subtitle">Личный сайт веб разработчика</span>
-            <ul class="socials login-box__socials socials_color_cyan">
-              <li class="socials__item socials__item_welcome"><a class="socials__link" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="assets/img/sprite/sprite.svg#vk"></use>
-                      </svg></a></li>
-              <li class="socials__item socials__item_welcome"><a class="socials__link" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="assets/img/sprite/sprite.svg#github"></use>
-                      </svg></a></li>
-              <li class="socials__item socials__item_welcome"><a class="socials__link" href="#">
-                      <svg class="socials__icon">
-                        <use xlink:href="assets/img/sprite/sprite.svg#in"></use>
-                      </svg></a></li>
-            </ul>
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="works.html"><span class="text_color_white">Мои работы</span></a></li>
-                <li class="navigation__item"><a class="navigation__link" href="about.html"><span class="text_color_white">Обо мне</span></a></li>
-                <li class="navigation__item"><a class="navigation__link" href="blog.html"><span class="text_color_white">Блог</span></a></li>
-              </ul>
-            </nav>
+          <button class="button button_pos_absolute" id="flip-to-back"><span class="text_color_accent text_color_white">Авторизоваться</span></button>
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="login-box login-box__welcome">
+                <div class="login-box__pic"><img class="login-box__pic-elem" src="assets/img/user.jpg" alt="user-photo"></div><span class="login-box__title text_size_28">Андрей Секачев</span><span class="login-box__subtitle">Личный сайт веб разработчика</span>
+                <ul class="socials login-box__socials socials_color_cyan">
+                  <li class="socials__item socials__item_welcome"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
+                            <use xlink:href="assets/img/sprite/sprite.svg#vk"></use>
+                          </svg></a></li>
+                  <li class="socials__item socials__item_welcome"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
+                            <use xlink:href="assets/img/sprite/sprite.svg#github"></use>
+                          </svg></a></li>
+                  <li class="socials__item socials__item_welcome"><a class="socials__link" href="#">
+                          <svg class="socials__icon">
+                            <use xlink:href="assets/img/sprite/sprite.svg#in"></use>
+                          </svg></a></li>
+                </ul>
+                <nav class="navigation">
+                  <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="works.html"><span class="text_color_white">Мои работы</span></a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="about.html"><span class="text_color_white">Обо мне</span></a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="blog.html"><span class="text_color_white">Блог</span></a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="login-block">
+                <div class="title login-block__title text_font_35"><span class="title__text">Авторизируйтесь</span></div>
+                <form class="form form-auth">
+                  <div class="form__inputs-block">
+                    <label class="form__label form__label_login">
+                      <input class="form__input" type="text" placeholder="Логин">
+                    </label>
+                    <label class="form__label form__label_pass">
+                      <input class="form__input" type="password" placeholder="Пароль">
+                    </label>
+                  </div>
+                  <div class="form__checks">
+                    <label class="form__label_check">
+                      <input class="form__input" type="checkbox"><span class="label-text label-text_checkbox">Я человек</span>
+                    </label>
+                    <div class="form__checks-text"><span class="text">Вы точно не робот?</span></div>
+                    <div class="form__answers">
+                      <label class="form__label_radio">
+                        <input class="form__input" type="radio" name="choice" value="yes"><span class="label-text label-text_radio">Да</span>
+                      </label>
+                      <label class="form__label_radio">
+                        <input class="form__input" type="radio" name="choice" value="no"><span class="label-text label-text_radio">Не уверен</span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+                <div class="form__buttons">
+                  <button class="button_auth button_trigger" id="flip-to-front" type="button"><span class="text_color_white">На главную</span></button>
+                  <button class="button_auth button_submit" type="submit"><span class="text_color_white">Войти</span></button>
+                </div>
+              </div>
+            </div>
           </div>
           <footer class="footer welcome__footer"><span class="footer__copyright">© Андрей Секачев | создано с любовью в LoftSchool       </span></footer>
         </section>

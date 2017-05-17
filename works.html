@@ -116,14 +116,16 @@
             <div class="title text_font_35"><span class="title__text">Связаться со мной</span></div>
             <form class="form">
               <div class="inputs__block">
-                <input class="input__item" type="text" placeholder="Имя">
-                <input class="input__item" type="email" placeholder="E-mail">
+                <input class="input__item" type="text" placeholder="Имя" id="form_name">
+                <input class="input__item" type="email" placeholder="E-mail" id="form_email">
                 <textarea class="input__item input_min-height_140" placeholder="Ваше сообщение"></textarea>
               </div>
               <div class="form__buttons">
-                <input class="button__item" type="submit" value="Отправить">
-                <input class="button__item" type="reset" value="Очистить">
+                <button class="button__item" id="form_send" type="submit"><span class="text_color_white">Отправить</span></button>
+                <button class="button__item" type="reset"><span class="text_color_white">Очистить</span></button>
               </div>
+              <div class="error-popup error-popup_name">Вы не ввели имя</div>
+              <div class="error-popup error-popup_email">Вы не ввели email</div>
             </form>
           </div><a class="arrow-scroll_footer_up" href="#">
                     <svg class="arrow__up">

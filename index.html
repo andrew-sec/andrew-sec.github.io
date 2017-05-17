@@ -63,11 +63,11 @@
                 <div class="title login-block__title text_font_35"><span class="title__text">Авторизируйтесь</span></div>
                 <form class="form form-auth">
                   <div class="form__inputs-block">
-                    <label class="form__label form__label_login">
-                      <input class="form__input" type="text" placeholder="Логин">
+                    <label class="form__label form__label_login" for="login">
+                      <input class="form__input" id="login" type="text" placeholder="Логин">
                     </label>
-                    <label class="form__label form__label_pass">
-                      <input class="form__input" type="password" placeholder="Пароль">
+                    <label class="form__label form__label_pass" for="password">
+                      <input class="form__input" id="password" type="password" placeholder="Пароль">
                     </label>
                   </div>
                   <div class="form__checks">
@@ -87,8 +87,10 @@
                 </form>
                 <div class="form__buttons">
                   <button class="button_auth button_trigger" id="flip-to-front" type="button"><span class="text_color_white">На главную</span></button>
-                  <button class="button_auth button_submit" type="submit"><span class="text_color_white">Войти</span></button>
+                  <button class="button_auth button_submit" id="button_submit" type="submit"><span class="text_color_white">Войти</span></button>
                 </div>
+                <div class="error-popup error-popup_login">Вы не ввели логин</div>
+                <div class="error-popup error-popup_pass">Вы не ввели пароль</div>
               </div>
             </div>
           </div>
